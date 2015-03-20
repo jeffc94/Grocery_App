@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="GrocereeZ"
+        android:id="@+id/tvName"
+        android:layout_marginTop="55dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="100dp" 
+        android:background = "@drawable/orange"
+        android:gravity="center"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Input your groceries!"
+        android:id="@+id/InputView"
+        android:layout_below="@+id/tvName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textSize="25dp" />
+
+    <Button
+        android:id="@+id/InputButton"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Scanbutton"
+        android:layout_centerHorizontal="true"
+        android:onClick="sendMessage2"
+        android:background="@drawable/rounded_button"
+        android:text="Manual Input"
+        android:focusable="true"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/ezView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/InputView"
+        android:layout_marginLeft="9dp"
+        android:layout_below="@+id/InputButton"
+        android:text="Groceries made ez"
+        android:layout_centerVertical="true"
+        android:textSize="25dp" />
+
+    <Button
+        android:id="@+id/Scanbutton"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/InputView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="21dp"
+        android:onClick="sendMessage1"
+        android:text="Scan Input"
+        android:focusable="true"
+        android:background="@drawable/rounded_button"
+        android:textSize="30dp" />
+
+</RelativeLayout>
